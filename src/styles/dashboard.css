@@ -1,0 +1,94 @@
+/* General Layout */
+.dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #aec8ed;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Sidebar Navigation Links */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.sidebar ul li {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #1a237e;
+  text-decoration: none;
+}
+
+.sidebar ul li:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
+.sidebar ul li svg {
+  margin-right: 10px;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background: #f1f3f4;
+}
+
+.file-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.file-item {
+  background: white;
+  padding: 10px;
+  width: 120px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.new-button {
+  position: fixed;
+  bottom: 20px;  /* Adjust the vertical position */
+  right: 20px;   /* Adjust the horizontal position */
+  background: #cdced6;
+  color: rgb(21, 67, 183);
+  border: none;
+  padding: 15px 25px;
+  border-radius: 20px; /* Makes it more rounded */
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1in;   /* 2 inches wide */
+  height: 0.5in;  /* 2 inches tall */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: Increase icon size */
+.new-button svg {
+  font-size: 24px;
+  margin-right: 8px;
+}
